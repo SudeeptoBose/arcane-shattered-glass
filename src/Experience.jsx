@@ -7,11 +7,11 @@ const Experience = () => {
 		<>
 			<Float>
 				<Text maxWidth={1} font='/BrokenGlass.ttf' textAlign='center' position={[0, 0, -2]}>
-					Ekko x Powder
+					Ekko × Powder
 				</Text>
 			</Float>
-			<Float rotationIntensity={2}>
-				<Shattered />
+			<Float>
+				<Shattered  scale={1.5}/>
 			</Float>
 		</>
 	)
