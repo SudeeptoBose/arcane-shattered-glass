@@ -2,6 +2,7 @@ import { Loader, ScrollControls } from "@react-three/drei"
 import { Canvas } from "@react-three/fiber"
 import Experience from "./Experience"
 import Footer from "./Footer"
+import AudioPlayer from "./AudioPlayer"
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
 					<Experience />
 				</ScrollControls>
 			</Canvas>
+			<AudioPlayer/>
 			<Loader />
 			<Footer/>
 		</>
