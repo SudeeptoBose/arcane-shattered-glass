@@ -13,7 +13,9 @@ export function Shattered(props) {
 
 	const group = useRef()
 
-	const videoTexture = useVideoTexture('/vid.mp4')
+	const videoTexture = useVideoTexture('/vid.mp4', {
+		muted: true
+	  })
 	videoTexture.flipY = false
 
 	const newMaterial = new THREE.MeshBasicMaterial({
