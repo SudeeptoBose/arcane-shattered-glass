@@ -14,14 +14,14 @@ const Experience = () => {
 					Ekko
 				</Text>
 				<Text maxWidth={1} font='/BrokenGlass.ttf' textAlign='center' position={[0, 0, -2]}>
-				×
+					×
 				</Text>
-				<Text color={'mediumpurple'} maxWidth={1} font='/BrokenGlass.ttf' textAlign='center' position={[0, -0.75, -2]}>
+				<Text color={'cornflowerblue'} maxWidth={1} font='/BrokenGlass.ttf' textAlign='center' position={[0, -0.75, -2]}>
 					Powder
 				</Text>
 			</Float>
 			<Float>
-				<Shattered scale={scale}/>
+				<Shattered scale={scale} />
 			</Float>
 		</>
 	)
