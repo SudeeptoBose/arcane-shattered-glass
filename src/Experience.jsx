@@ -10,8 +10,14 @@ const Experience = () => {
 	return (
 		<>
 			<Float>
+				<Text color={'lightgreen'} maxWidth={1} font='/BrokenGlass.ttf' textAlign='center' position={[0, 0.75, -2]}>
+					Ekko
+				</Text>
 				<Text maxWidth={1} font='/BrokenGlass.ttf' textAlign='center' position={[0, 0, -2]}>
-					Ekko × Powder
+				×
+				</Text>
+				<Text color={'mediumpurple'} maxWidth={1} font='/BrokenGlass.ttf' textAlign='center' position={[0, -0.75, -2]}>
+					Powder
 				</Text>
 			</Float>
 			<Float>

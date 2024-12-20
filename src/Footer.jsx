@@ -1,4 +1,18 @@
+import { useEffect } from "react";
+
 const Footer = () => {
+  useEffect(() => {
+    // Add custom font using CSS
+    const style = document.createElement('style');
+    style.textContent = `
+      @font-face {
+        font-family: 'BrokenGlass';
+        src: url('/BrokenGlass.ttf') format('truetype');
+      }
+    `;
+    document.head.appendChild(style);
+    return () => document.head.removeChild(style);
+  }, []);
   return (
     <div className="fixed p-4 lg:px-12 w-full bottom-10">
       <div className="flex lg:flex-row flex-col lg:justify-between items-end gap-2">
@@ -13,7 +27,7 @@ const Footer = () => {
           </a>
         </div>
         <div className="text-white text-right space-y-2 lg:right-12 right-4">
-          <p className="text-xl">Scroll to Shatter</p>
+          <p className="text-4xl" style={{fontFamily: 'BrokenGlass', color: 'mediumpurple'}}>Scroll to Shatter</p>
           <a
             className="block opacity-75 hover:opacity-100 transition-opacity duration-300"
             target="_blank"
