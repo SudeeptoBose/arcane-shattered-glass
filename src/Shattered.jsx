@@ -39,14 +39,14 @@ export function Shattered(props) {
 			mesh.getWorldPosition(meshWorldPosition)
 
 			// Rotation math
-			const randomVector = new THREE.Vector3(Math.random()*3,Math.random()*3,Math.random()*3)
+			const randomVector = new THREE.Vector3(Math.random()*2,Math.random()*2,Math.random()*2)
 			mesh.targetRotation = mesh.originalRotation.clone().setFromVector3(randomVector)
 
 			// Calculate the distance from the groupWorldPosition to the mesWorldPosition
 			mesh.directionVector = meshWorldPosition.clone().sub(groupWorldPosition).normalize()
 
 			// Set a target position so that the mesh knows where to go after scrolling
-			mesh.targetPosition = mesh.originalPosition.clone().add(mesh.directionVector.clone().multiplyScalar(1.5))
+			mesh.targetPosition = mesh.originalPosition.clone().add(mesh.directionVector.clone().multiplyScalar(0.5))
 
 		})
 	}, [])
